@@ -48,14 +48,14 @@ pipeline {
     /* ==========================
        ARTIFACTS
     ========================== */
-    post {
-        always {
-            script {
-                if (params.ARCHIVE_LOGS) {
-                    archiveArtifacts artifacts: '**/output.log',
-                                     fingerprint: true
-                }
-            }
-        }
-    }
+   // post {
+   //     always {
+   //         script {
+   //             if (params.ARCHIVE_LOGS) {
+   //                 archiveArtifacts artifacts: '**/output.log',
+   //                                  fingerprint: true
+   //             }
+   //         }
+   //     }
+   //  }
 }
